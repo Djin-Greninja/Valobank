@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lineart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="62dp"
+        android:layout_height="54dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/valobank_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/valobank_main"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/valorant"
+        android:text="VALOBANK"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <ImageView
+        android:id="@+id/bg_balance"
+        android:layout_width="361dp"
+        android:layout_height="171dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#1c252e"
+        android:padding="1dp"
+        android:src="@drawable/simplebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="314dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/valorant"
+        android:gravity="center"
+        android:text="Available Balance:"
+        android:textColor="#F4F0F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <TextView
+        android:id="@+id/money_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/valorant"
+        android:text="₱ 100,000.00"
+        android:textColor="#FAF7F7"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FF4655"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bg_balance"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_balance"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/cypher" />
+
+    <ImageButton
+        android:id="@+id/send_transfer"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FF4655"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:onClick="send"
+        app:layout_constraintBottom_toTopOf="@+id/notifs"
+        app:layout_constraintEnd_toEndOf="@+id/notifs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/notifs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876"
+        app:srcCompat="@drawable/updraft" />
+
+    <ImageButton
+        android:id="@+id/notifs"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FF4655"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="@+id/bg_balance"
+        app:layout_constraintTop_toTopOf="@+id/settings"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/notiflogo" />
+
+    <TextView
+        android:id="@+id/sett_main"
+        android:layout_width="94dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/valorant"
+        android:gravity="center"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settings"
+        app:layout_constraintStart_toStartOf="@+id/settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/notf"
+        android:layout_width="94dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/valorant"
+        android:gravity="center"
+        android:text="Notifications"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/notifs"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/notifs"
+        app:layout_constraintTop_toBottomOf="@+id/notifs"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/pb_main"
+        android:layout_width="72dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/valorant"
+        android:text="Pay Bills"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pay_bills"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/pay_bills"
+        app:layout_constraintTop_toBottomOf="@+id/pay_bills"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageButton
+        android:id="@+id/pay_bills"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FF4655"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/settings"
+        app:layout_constraintEnd_toEndOf="@+id/settings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/settings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876"
+        app:srcCompat="@drawable/pay"/>
+
+    <TextView
+        android:id="@+id/st_main"
+        android:layout_width="108dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/valorant"
+        android:text="Send/Transfer"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/send_transfer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/send_transfer"
+        app:layout_constraintTop_toBottomOf="@+id/send_transfer"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="450dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transac_main"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/transac_main"
+        android:layout_width="214dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/valorant"
+        android:text="RECENT TRANSACTIONS:"
+        android:textAlignment="center"
+        android:textColor="#232222"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

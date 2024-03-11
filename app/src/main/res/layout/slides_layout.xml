@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/first_slide_desc"
+        android:layout_width="370dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/nasa"
+        android:gravity="center|left"
+        android:padding="20dp"
+        android:text="@string/first_description"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:flow_verticalBias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/first_slide_title"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <ImageView
+        android:id="@+id/first_slide_img"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/plant" />
+
+    <TextView
+        android:id="@+id/first_slide_title"
+        android:layout_width="343dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/colombo"
+        android:gravity="left"
+        android:letterSpacing=".1"
+        android:text="@string/first_slide"
+        android:textColor="#FF4655"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_slide_img" />
+
+    <TextView
+        android:id="@+id/st_main"
+        android:layout_width="128dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/colombo"
+        android:gravity="center"
+        android:text="VALOBANK"
+        android:textColor="#FF4655"
+        app:layout_constraintBottom_toTopOf="@+id/first_slide_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/fbutton"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Skip"
+        android:textColor="#FF4655"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/st_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/st_main"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fdot"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:flow_firstVerticalBias="6"
+        app:layout_constraintStart_toStartOf="@+id/first_slide_desc"
+        app:layout_constraintTop_toBottomOf="@+id/first_slide_desc"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fdots" />
+</androidx.constraintlayout.widget.ConstraintLayout>
